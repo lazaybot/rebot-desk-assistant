@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rebot-desk-assistant"
+version = "0.1.0"
+description = "Safety-first desktop task planning for the reBot B601 arm"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+authors = [{name = "Jaden LyTran"}]
+dependencies = []
+
+[project.scripts]
+rebot-desk = "desk_assistant.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["desk_assistant*"]
+
+[tool.setuptools.package-data]
+desk_assistant = ["config/*.json"]
