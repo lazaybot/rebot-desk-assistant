@@ -1,0 +1,27 @@
+{
+  "units": "meters",
+  "workspace": {
+    "x": [-0.45, 0.45],
+    "y": [0.10, 0.65],
+    "z": [0.02, 0.45]
+  },
+  "limits": {
+    "max_speed_mps": 0.10,
+    "max_payload_kg": 0.25
+  },
+  "home": [0.00, 0.25, 0.35],
+  "park": [-0.30, 0.18, 0.30],
+  "zones": {
+    "handoff": {"center": [0.30, 0.28, 0.08], "width": 0.14, "depth": 0.14},
+    "inspection": {"center": [0.00, 0.42, 0.09], "width": 0.16, "depth": 0.14},
+    "parts_red": {"center": [-0.28, 0.48, 0.06], "width": 0.16, "depth": 0.14},
+    "parts_blue": {"center": [-0.08, 0.52, 0.06], "width": 0.16, "depth": 0.14},
+    "keyboard": {"center": [0.20, 0.52, 0.02], "width": 0.32, "depth": 0.16, "kind": "no_go"}
+  },
+  "items": {
+    "screwdriver": {"pose": [-0.30, 0.28, 0.04], "mass_kg": 0.11, "category": "blue"},
+    "red_connector": {"pose": [-0.18, 0.31, 0.03], "mass_kg": 0.02, "category": "red"},
+    "blue_connector": {"pose": [-0.10, 0.31, 0.03], "mass_kg": 0.02, "category": "blue"},
+    "circuit_board": {"pose": [0.02, 0.30, 0.035], "mass_kg": 0.08, "category": "blue"}
+  }
+}
